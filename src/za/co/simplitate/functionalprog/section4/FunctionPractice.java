@@ -9,7 +9,7 @@ public class FunctionPractice {
 
         List<String> list = List.of("Zwaks", "", "Sibo", "Simphy");
 
-        Function<String, Integer> func = e -> e.length();
+        Function<String, Integer> func = String::length;
         List<Integer> newList = mapList(list, func);
         System.out.println(newList);
     }

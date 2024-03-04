@@ -9,7 +9,7 @@ public class ConsumerPractice {
     public static void main(String[] args) {
 
         List<Integer> ints = IntStream.range(1, 9).boxed().toList();
-        Consumer<Integer> consumer = i -> System.out.println(i);
+        Consumer<Integer> consumer = System.out::println;
         consumer.accept(45);
         
         printElements(consumer, ints);
